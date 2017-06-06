@@ -1,0 +1,22 @@
+.class1 {
+    width: 500px;
+    height: 150px;
+    background: red;
+}
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.infoBook {
+    width: 500px;
+    margin: 30px auto;
+}
+.hide {
+    display: none;
+}
+.infoBook img {
+    width: 50%;
+}
+.infoBook p {
+    text-align: justify;
+}
