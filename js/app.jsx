@@ -34,7 +34,6 @@ var books = [
         pages : 505
     }
 ];
-// var counterPages=0;
 var Element = React.createClass({
     propTypes: {
         dataElement: React.PropTypes.shape({
@@ -59,8 +58,6 @@ var Element = React.createClass({
         e.preventDefault();
         this.setState({visible: false});
     },
-
-
     render: function() {
         var author = this.props.dataElement.author,
             img = this.props.dataElement.img,
@@ -79,14 +76,14 @@ var Element = React.createClass({
                        onClick={this.readmoreClick}
                        className={'more ' + (visibleM ? 'none': '')}
                     >
-                        More
+                        Посмотреть описание
                     </button>
                 <p className={'descr_readmore ' + (visibleM ? '' : 'none')}><span className="subtitle">Описание: </span>{description}</p>
                 <button
                     onClick={this.hideClick}
                     className={'more ' + (visibleM ? '' : 'none')}
                 >
-                    Hide
+                    Скрыть описание
                 </button>
                 <div>
                     <a href={url}>Ссылка на книгу</a>
@@ -111,7 +108,7 @@ var Library = React.createClass({
 
     counterClick: function(e) {
         e.preventDefault();
-        this.setState({key : this.state.counterPages++});
+        this.setState({counterPages : ++this.state.counterPages});
         console.log(this.state.counterPages);
 
     },
