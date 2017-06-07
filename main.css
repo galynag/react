@@ -4,19 +4,28 @@
     background: red;
 }
 .subtitle {
-    text-transform: uppercase;
     font-weight: bold;
 }
 .infoBook {
-    width: 500px;
+    width: 30%;
     margin: 30px auto;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
 }
 .hide {
     display: none;
 }
 .infoBook img {
-    width: 50%;
+    width: 100%;
 }
 .infoBook p {
     text-align: justify;
+}
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+.none {
+    display: none;
 }
